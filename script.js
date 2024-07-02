@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentTime - lastClickTime < 1000) {
             clickCount++;
             if (clickCount === 5) {
-                videoContainer.style.display = 'flex';
+                videoContainerfather.style.display = 'flex';
                 createConfetti();
             }
         } else {
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeBtn.addEventListener('click', () => {
         videoContainer.style.display = 'none';
+        videoContainerfather.style.display = 'none';
         removeConfetti();
         clickCount = 0; // Reset click count on close
     });
