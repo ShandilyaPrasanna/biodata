@@ -1,14 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     let clickCount = 0;
+    let lastClickTime = 0;
     const placeElement = document.getElementById('place');
     const videoContainer = document.getElementById('video-container');
+    const closeBtn = document.getElementById('close-btn');
 
     placeElement.addEventListener('click', () => {
-        clickCount++;
-        if (clickCount === 5) {
-            videoContainer.style.display = 'flex';
-            createConfetti();
+        const currentTime = new Date().getTime();
+        if (currentTime - lastClickTime < 1000) {
+            clickCount++;
+            if (clickCount === 5) {
+                videoContainer.style.display = 'flex';
+                createConfetti();
+            }
+        } else {
+            clickCount = 1; // Start counting again if more than 20 seconds since last click
         }
+        lastClickTime = currentTime;
+    });
+
+    closeBtn.addEventListener('click', () => {
+        videoContainer.style.display = 'none';
+        removeConfetti();
+        clickCount = 0; // Reset click count on close
     });
 
     function createConfetti() {
@@ -20,5 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
             confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
             document.body.appendChild(confetti);
         }
+    }
+
+    function removeConfetti() {
+        const confettis = document.querySelectorAll('.confetti');
+        confettis.forEach(confetti => confetti.remove());
     }
 });
