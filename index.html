@@ -3,22 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Biodata for Matrimonial Site</title>
     <link rel="stylesheet" href="web.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple HTML Page</h1>
-    </header>
-    <main>
-        <div class="content">
-            <h2>About This Page</h2>
-            <p>This is a simple HTML page with basic styling. You can use this template to start building your own web pages.</p>
-            <p>Feel free to modify the content, styles, and structure as needed.</p>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Simple HTML Page</p>
-    </footer>
+    <div class="container">
+        <section class="overview">
+            <h1>Overview</h1>
+            <p>Name: John Doe</p>
+            <p>DOB: 12/12/12</p>
+            <p>Height: 5.8</p>
+            <p>Marital Status: Single</p>
+            <p>Mob: xxxxxxxxx</p>
+            <p>Education: B.Tech</p>
+            <p>Religion: Hindu</p>
+            <p>Community: Brahmin Sarjuparin</p>
+            <p>Sub Community: Tiwari</p>
+            <p>Gotra: Shandilya</p>
+        </section>
+        <section class="family">
+            <h1>Family and Sibling Details</h1>
+            <p>Father Name: Bindusar Tiwari (Retired as Executive Engineer from UP Jal Nigam)</p>
+            <p>Mother Name: Shashikala Tiwari (Housewife)</p>
+            <p>Siblings:</p>
+            <ul>
+                <li>Kushal Tiwari (Practicing in Allahabad High Court) - Married</li>
+                <li>Kshem Shukla (Sister) - Married</li>
+            </ul>
+            <p>Current Place: <span id="place">Prayagraj UP</span></p>
+            <p>Native Place: Azamgarh UP</p>
+        </section>
+        <section class="career">
+            <h1>Career</h1>
+            <p>Living in: Bengaluru</p>
+            <p>Current Company: Walmart Global Tech (5 years)</p>
+            <p>Total Experience: 8 years</p>
+            <p>Current CTC: 58 LPA</p>
+        </section>
+    </div>
+    <div id="video-container">
+        <video controls>
+            <source src="placeholder.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 </html>
