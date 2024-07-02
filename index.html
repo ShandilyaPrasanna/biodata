@@ -8,7 +8,7 @@
     <script defer src="script.js"></script>
 </head>
 <body>
- <h1 id="bio">Biodata</h1>
+ <h1 id="bio"><span style="display:none">JAI BAJRANG BALI</span>Biodata</h1>
     <div class="container">
         <section class="overview">
             <h1>Overview</h1>
@@ -28,7 +28,7 @@
         <section class="family">
             <h1>Family and Sibling Details</h1>
             <ul>
-                <li><span class="bold-text">Father Name:</span> Bindusar Tiwari (Retired as Executive Engineer from UP Jal Nigam)</li>
+                <li><span class="bold-text">Father Name:</span><span id="father"> Bindusar Tiwari (Retired as Executive Engineer from UP Jal Nigam)</span></li>
                 <li><span class="bold-text">Mother Name:</span> Shashikala Tiwari (Housewife)</li>
                 <li><span class="bold-text">Siblings:</span>
                     <ul>
@@ -53,6 +53,13 @@
     <div id="video-container">
         <video controls autoplay>
             <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="close-btn">Close</button>
+    </div>
+        <div id="video-container-father">
+        <video controls autoplay>
+            <source src="video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <button id="close-btn">Close</button>
