@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let clickCount = 0;
     let lastClickTime = 0;
     const placeElement = document.getElementById('place');
+    const fatherElement = document.getElementById('father');
     const videoContainer = document.getElementById('video-container');
     const videoContainerfather = document.getElementById('video-container-father');
     const closeBtn = document.getElementById('close-btn');
