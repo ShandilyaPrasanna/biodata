@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoContainer = document.getElementById('video-container');
     const videoContainerfather = document.getElementById('video-container-father');
     const closeBtn = document.getElementById('close-btn');
-    const closeBtn = document.getElementById('close-btnf');
+    const closeBtnf = document.getElementById('close-btnf');
 
     placeElement.addEventListener('click', () => {
         const currentTime = new Date().getTime();
