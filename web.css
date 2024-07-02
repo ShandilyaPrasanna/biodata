@@ -84,6 +84,16 @@ ul li {
     font-size: 16px;
 }
 
+#close-btnf {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .confetti {
     position: fixed;
     width: 10px;
