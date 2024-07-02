@@ -3,9 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastClickTime = 0;
     const placeElement = document.getElementById('place');
     const videoContainer = document.getElementById('video-container');
+    const videoContainerfather = document.getElementById('video-container-father');
     const closeBtn = document.getElementById('close-btn');
 
     placeElement.addEventListener('click', () => {
+        const currentTime = new Date().getTime();
+        if (currentTime - lastClickTime < 1000) {
+            clickCount++;
+            if (clickCount === 5) {
+                videoContainer.style.display = 'flex';
+                createConfetti();
+            }
+        } else {
+            clickCount = 1; // Start counting again if more than 20 seconds since last click
+        }
+        lastClickTime = currentTime;
+    });
+
+        fatherElement.addEventListener('click', () => {
         const currentTime = new Date().getTime();
         if (currentTime - lastClickTime < 1000) {
             clickCount++;
