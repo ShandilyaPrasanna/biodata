@@ -8,38 +8,46 @@
     <script defer src="script.js"></script>
 </head>
 <body>
+ <h1 id="bio">Biodata</h1>
     <div class="container">
         <section class="overview">
             <h1>Overview</h1>
-            <p>Name: John Doe</p>
-            <p>DOB: 12/12/12</p>
-            <p>Height: 5.8</p>
-            <p>Marital Status: Single</p>
-            <p>Mob: xxxxxxxxx</p>
-            <p>Education: B.Tech</p>
-            <p>Religion: Hindu</p>
-            <p>Community: Brahmin Sarjuparin</p>
-            <p>Sub Community: Tiwari</p>
-            <p>Gotra: Shandilya</p>
+            <ul>
+                <li><span class="bold-text">Name:</span> Prasanna Shandilya</li>
+                <li><span class="bold-text">DOB:</span> 12/10/1991</li>
+                <li><span class="bold-text">Height:</span> 5.8</li>
+                <li><span class="bold-text">Marital Status:</span> Single</li>
+                <li><span class="bold-text">Mob:</span> 9108052960</li>
+                <li><span class="bold-text">Education:</span> B.Tech</li>
+                <li><span class="bold-text">Religion:</span> Hindu</li>
+                <li><span class="bold-text">Community:</span> Brahmin Sarjuparin</li>
+                <li><span class="bold-text">Sub Community:</span> Tiwari</li>
+                <li><span class="bold-text">Gotra:</span> Shandilya</li>
+            </ul>
         </section>
         <section class="family">
             <h1>Family and Sibling Details</h1>
-            <p>Father Name: Bindusar Tiwari (Retired as Executive Engineer from UP Jal Nigam)</p>
-            <p>Mother Name: Shashikala Tiwari (Housewife)</p>
-            <p>Siblings:</p>
             <ul>
-                <li>Kushal Tiwari (Practicing in Allahabad High Court) - Married</li>
-                <li>Kshem Shukla (Sister) - Married</li>
+                <li><span class="bold-text">Father Name:</span> Bindusar Tiwari (Retired as Executive Engineer from UP Jal Nigam)</li>
+                <li><span class="bold-text">Mother Name:</span> Shashikala Tiwari (Housewife)</li>
+                <li><span class="bold-text">Siblings:</span>
+                    <ul>
+                        <li>Kushal Tiwari (Practicing in Allahabad High Court) - Married</li>
+                        <li>Kshem Shukla (Sister) - Married</li>
+                    </ul>
+                </li>
+                <li><span class="bold-text">Current Place:</span> <span id="place">Prayagraj UP</span></li>
+                <li><span class="bold-text">Native Place:</span> Azamgarh UP</li>
             </ul>
-            <p>Current Place: <span id="place">Prayagraj UP</span></p>
-            <p>Native Place: Azamgarh UP</p>
         </section>
         <section class="career">
             <h1>Career</h1>
-            <p>Living in: Bengaluru</p>
-            <p>Current Company: Walmart Global Tech (5 years)</p>
-            <p>Total Experience: 8 years</p>
-            <p>Current CTC: 58 LPA</p>
+            <ul>
+                <li><span class="bold-text">Living in:</span> Bengaluru</li>
+                <li><span class="bold-text">Current Company:</span> Walmart Global Tech (5 years)</li>
+                <li><span class="bold-text">Total Experience:</span> 8 years</li>
+                <li><span class="bold-text">Current CTC:</span> 58 LPA</li>
+            </ul>
         </section>
     </div>
     <div id="video-container">
@@ -47,6 +55,7 @@
             <source src="placeholder.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <button id="close-btn">Close</button>
     </div>
 </body>
 </html>
